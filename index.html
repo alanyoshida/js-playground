@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PlayGround</title>
+  <script>
+    window.onload = function(){
+      var mydiv = document.getElementById("mydiv");
+      console.warn(mydiv);
+    }
+  </script>
+</head>
+<body>
+  <p>document.getElementById("mydiv") returns the first element if have more than one in the same page. <br> 
+  Obs: Never use more than once of the same id in the same page.</p>
+  <div id="mydiv">First</div>
+  <div id="mydiv">Second</div>
+</body>
+</html>
