@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scroll</title>
+    <script
+    src="http://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        // $('html, body').animate({
+        //     scrollTop: $("#target-element").offset().top
+        // }, 1000);
+
+        // Animate scrolling for all anchors on your page. The following snippet will watch for clicks on any link that points to an anchor and smoothly scroll down to it:
+        $(document).ready(function(){
+            $('a[href^="#"]').on('click', function(event) {
+                var id = this.href.substring(this.href.indexOf('#'), this.href.length);
+                var target = $(id);
+                if( target.length ) {
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                }
+            });
+        });
+    </script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            display: block;
+            position: fixed; 
+            top: 0; 
+            width: 100%;
+            background-color: #ddd;
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            float: left;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="#id1">Vai Para 1</a></li>
+        <li><a href="#id2">Vai Para 2</a></li>
+        <li><a href="#id3">Vai Para 3</a></li>
+        <li><a href="#id4">Vai Para 4</a></li>
+        <li><a href="#id5">Vai Para 5</a></li>
+        <li><a href="#id6">Vai Para 6</a></li>
+        <li><a href="#id7">Vai Para 7</a></li>
+        <li><a href="#id8">Vai Para 8</a></li>
+        <li><a href="#id9">Vai Para 9</a></li>
+        <li><a href="#id10">Vai Para 10</a></li>
+        <li><a href="#id11">Vai Para 11</a></li>
+        <li><a href="#id12">Vai Para 12</a></li>
+        <li><a href="#id13">Vai Para 13</a></li>
+        <li><a href="#id14">Vai Para 14</a></li>
+        <li><a href="#id15">Vai Para 15</a></li>
+        <li><a href="#id16">Vai Para 16</a></li>
+        <li><a href="#id17">Vai Para 17</a></li>
+        <li><a href="#id18">Vai Para 18</a></li>
+        <li><a href="#id19">Vai Para 19</a></li>
+        <li><a href="#id20">Vai Para 20</a></li>
+    </ul>
+</nav>
+<br><br><br>
+<br><br><br>
+<h1 id="id1">Lorem ipsum dolor sit amet.</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aut temporibus cumque ratione, architecto aliquam. Saepe praesentium fugiat quisquam beatae assumenda iure. Numquam nostrum, consequatur facilis quas vitae voluptate quo!</p>
+<br>
+<br>
+<br>
+<h1 id="id2">Dolorum, explicabo maxime repellendus id.</h1>
+<p>Illum reiciendis tenetur sed error maiores! Natus laboriosam error quas. Nam, sapiente quibusdam nesciunt debitis incidunt, nulla error, perferendis, mollitia sit quis molestiae dolore eum. In vel ea doloribus repellat.</p>
+<br>
+<br>
+<br>
+<h1 id="id3">Perspiciatis, ratione nobis deserunt officiis!</h1>
+<p>Cupiditate, pariatur, quasi! Tempora esse dolor error aliquid ducimus nesciunt tempore suscipit nobis tenetur labore, odio quos. Earum aperiam suscipit, ipsam alias similique cupiditate, perferendis recusandae iusto repellendus nisi accusamus.</p>
+<br>
+<br>
+<br>
+<h1 id="id4">Dolorum, sunt tenetur expedita dicta.</h1>
+<p>Repellat, suscipit, delectus! Sed labore quas, adipisci nisi? Quae saepe voluptate animi. Quae harum officiis odit rerum, in aliquid temporibus totam delectus fugit quas quos, voluptate, facilis omnis dolor tenetur?</p>
+<br>
+<br>
+<br>
+<h1 id="id5">Quia repellat commodi obcaecati. Veritatis?</h1>
+<p>Reiciendis, atque vero similique voluptatum eveniet sunt nostrum assumenda necessitatibus itaque! Hic enim repudiandae consequatur iste tempora repellendus provident, a sapiente quaerat soluta minima dignissimos ea quasi, rerum veritatis quas.</p>
+<br>
+<br>
+<br>
+<h1 id="id6">Animi nulla maiores, deleniti minus!</h1>
+<p>Sit fugiat saepe porro nisi libero, deserunt sapiente voluptatibus dolorum dolorem eligendi magnam eius in accusamus optio itaque nesciunt facere aliquam recusandae hic rem. Expedita hic nihil, eaque optio! Fuga.</p>
+<br>
+<br>
+<br>
+<h1 id="id7">Facilis explicabo ipsum dignissimos fuga.</h1>
+<p>Alias quia animi tenetur deleniti aperiam numquam, distinctio excepturi aliquid facere provident, ea illo dolor voluptates temporibus, omnis rem commodi? Perferendis eaque fugiat praesentium pariatur quidem temporibus enim, tempora suscipit.</p>
+<br>
+<br>
+<br>
+<h1 id="id8">Vitae fugiat quasi velit possimus.</h1>
+<p>Eum veniam maxime non quidem totam aut eos id doloribus aperiam dolores animi fugiat sequi, facere esse enim impedit quo maiores minus repellat qui. Eligendi labore soluta consectetur ducimus, amet.</p>
+<br>
+<br>
+<br>
+<h1 id="id9">Deleniti dignissimos distinctio tempore praesentium!</h1>
+<p>Sed ab tempore magni unde eos ullam atque, doloremque deleniti ad! Accusantium doloremque, ipsa pariatur vel consequuntur, magni delectus nostrum dolorum suscipit, error ea! Dolore tenetur facere dolorum voluptates vitae!</p>
+<br>
+<br>
+<br>
+<h1 id="id10">Tenetur modi iste porro. Rerum.</h1>
+<p>Ipsum obcaecati nisi expedita explicabo consequatur, ut eos similique adipisci, laudantium pariatur non perspiciatis ea commodi quae facilis aliquam voluptates nulla aperiam alias eius incidunt voluptatibus molestias eligendi inventore. Fugit!</p>
+<br>
+<br>
+<br>
+<h1 id="id11">Ab repellendus, nisi omnis voluptatibus?</h1>
+<p>Quibusdam rerum, unde ullam tempora nulla iusto, quas voluptate assumenda labore ratione illo officiis laudantium earum adipisci! Cupiditate dolorem praesentium adipisci facere ad repellendus, quos commodi animi reprehenderit, eum amet!</p>
+<br>
+<br>
+<br>
+<h1 id="id12">Omnis aliquid, ab inventore asperiores.</h1>
+<p>A minus repellendus distinctio, similique laborum molestiae, ad deleniti odit ipsam minima labore officiis, neque eveniet ipsa. Harum, inventore corporis quasi itaque voluptatibus deserunt veniam impedit laboriosam odit. Iste, esse.</p>
+<br>
+<br>
+<br>
+<h1 id="id13">Iste facere dolorem, ducimus quasi?</h1>
+<p>Eaque obcaecati consectetur, ipsum eligendi repudiandae facere amet harum vero aperiam recusandae, praesentium autem illum, adipisci nobis a distinctio facilis. Ut incidunt, distinctio error debitis tenetur illo non! Earum, illo.</p>
+<br>
+<br>
+<br>
+<h1 id="id14">Quibusdam, repellat, illo. Molestias, blanditiis.</h1>
+<p>Similique saepe vitae possimus distinctio temporibus impedit, enim quidem ea esse recusandae, ipsa in id, eveniet, eaque molestias. Sapiente eos maxime sed quos iste ut doloremque quod hic, itaque id.</p>
+<br>
+<br>
+<br>
+<h1 id="id15">Nemo deserunt expedita, vero repudiandae.</h1>
+<p>Aliquid sit aperiam voluptatem vero laboriosam, fugit molestiae nulla voluptatibus voluptates quibusdam quo, voluptate officiis sequi amet ea dolore a tempore quis reprehenderit. Eos dolore molestiae quo, et, ipsum numquam.</p>
+<br>
+<br>
+<br>
+<h1 id="id16">Voluptatem cum incidunt ratione quidem?</h1>
+<p>Aspernatur inventore dicta doloribus, assumenda cupiditate quibusdam dolorem delectus. Temporibus fuga tempora repellat vitae aut qui labore sit expedita deleniti magni optio amet nisi itaque officia, sunt harum incidunt, cumque.</p>
+<br>
+<br>
+<br>
+<h1 id="id17">Cumque labore ex illo, alias.</h1>
+<p>A eos cumque cupiditate saepe obcaecati porro ipsam molestias perspiciatis accusamus, consectetur, fuga veniam nobis cum maiores voluptatum ullam, iure nemo officia et soluta tempora! Quos at sunt dolorem, voluptas!</p>
+<br>
+<br>
+<br>
+<h1 id="id18">Accusamus illo delectus totam provident.</h1>
+<p>Libero obcaecati ex ipsum atque molestias fugiat aliquam, sunt nostrum non labore quas nihil tenetur unde culpa cum recusandae, consequuntur quibusdam totam, suscipit est voluptas maiores. Nobis, et sit vero.</p>
+<br>
+<br>
+<br>
+<h1 id="id19">Distinctio quam corporis recusandae, veritatis.</h1>
+<p>Incidunt accusantium rem ea eius libero quas quo optio et, est, veritatis, deserunt in voluptatum animi. Velit, voluptatibus eaque dignissimos. Quo in consequatur atque, inventore blanditiis, ad illo mollitia quia.</p>
+<br>
+<br>
+<br>
+<h1 id="id20">Cumque cupiditate aperiam harum quod.</h1>
+<p>Eaque officiis, quas, officia quibusdam quisquam vitae minima tenetur, repellendus nesciunt voluptates provident architecto. Dolorem accusantium aperiam cumque maiores quia exercitationem, dolore perspiciatis, delectus quod unde nam debitis asperiores numquam?</p>
+<br>
+<br>
+<br>
+
+</body>
+</html>
