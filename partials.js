@@ -18,3 +18,18 @@ console.info(character1);
 
 var character2 = greetSer( "Davos" ) // Greetings Ser Davos
 console.info(character2);
+
+
+// Other ways, using fixed parameters as left or right
+
+function leftApply( f, a ) {
+    return function( b ) {
+        return f( a, b )
+    }
+}
+
+function rightApply( f, b ) {
+    return function( a ) {
+        return f( a, b )
+    }
+}
