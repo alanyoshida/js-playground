@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lambda</title>
+  <script>
+var identity = (x) => x;
+var almostfactorial = (f) => (n) => n===0?1:n*(f(n-1));
+var almostfibonacci = (f) => (n) => {
+  switch(n){
+    case 0:
+      return 0;
+      break;
+    case 1:
+      return 1;
+      break;
+    default:
+      return f(n-1) + f(n -2);
+  }
+};
+
+var factorial0 = almostfactorial(identity);
+var factorial1 = almostfactorial(factorial0);
+
+// var Y = (f) => f( Y(f) );
+var Y = (f) => f( (x) => Y(f)(x) );
+
+var Y = function(f){
+      return f(function(x){
+                return Y(f)(x);
+                    });
+}
+
+var factorial = Y(almostfactorial);
+
+var fibonacci = Y(almostfibonacci);
+
+// debugger;
+console.info("Factorial of 6: " + factorial(6));
+console.info("Fibonacci of 7: " + fibonacci(7));
+
+  </script>
+</head>
+<body>
+<textarea cols="120" rows="30">
+var identity = (x) => x;
+var almostfactorial = (f) => (n) => n===0?1:n*(f(n-1));
+var almostfibonacci = (f) => (n) => {
+  switch(n){
+    case 0:
+      return 0;
+      break;
+    case 1:
+      return 1;
+      break;
+    default:
+      return f(n-1) + f(n -2);
+  }
+};
+
+var factorial0 = almostfactorial(identity);
+var factorial1 = almostfactorial(factorial0);
+
+// var Y = (f) => f( Y(f) );
+var Y = (f) => f( (x) => Y(f)(x) );
+
+var Y = function(f){
+      return f(function(x){
+                return Y(f)(x);
+                    });
+}
+
+var factorial = Y(almostfactorial);
+
+var fibonacci = Y(almostfibonacci);
+
+// debugger;
+factorial(6);
+</textarea>
+</body>
+</html>
